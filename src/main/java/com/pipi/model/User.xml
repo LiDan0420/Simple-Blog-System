@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<entity-mappings xmlns="http://java.sun.com/xml/ns/persistence/orm"
+        version="2.0">
+
+    <entity class="com.pipi.model.User">
+        <table name="user" schema="pipi" catalog=""/>
+        <attributes>
+            <id name="uid">
+                <column name="uid" precision="11"/>
+            </id>
+            <basic name="username">
+                <column name="username" length="20"/>
+            </basic>
+            <basic name="password">
+                <column name="password" length="20"/>
+            </basic>
+        </attributes>
+    </entity>
+</entity-mappings>
